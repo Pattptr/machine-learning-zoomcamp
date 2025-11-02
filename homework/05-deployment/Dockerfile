@@ -10,7 +10,7 @@ COPY "pyproject.toml" "uv.lock" ".python-version" ./
 
 RUN uv sync --locked
 
-COPY "predict.py" "pipeline_v1.bin" ./
+COPY "predict.py" ./
 
 EXPOSE 8000
 
